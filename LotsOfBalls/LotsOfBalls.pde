@@ -7,7 +7,7 @@
 //name = new type[size];
 //name = {insert data here};
 
-int count = 10;
+int count = 20;
 float a,b,c;
 //declare and initialize arrays
 float[] x = new float[count];
@@ -40,9 +40,9 @@ void setup() {
 void draw() {
   //draw background to cover previous frame
   background(0);
-
-  int i = 0;
-  while (i < count) {
+  
+  
+  for (int i=0; i<count; i++) {
     //draw ball
     fill(a,b,c);
     ellipse(x[i], y[i], diam[i], diam[i]);
