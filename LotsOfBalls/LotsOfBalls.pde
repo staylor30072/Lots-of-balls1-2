@@ -1,12 +1,4 @@
-//declaring and initializing a variable in one line looks like this: float x = 10;
-
-//declaring an array looks like this:
-//type[] name;
-
-//initializing an array looks like this:
-//name = new type[size];
-//name = {insert data here};
-
+//regulAR VARIABLES
 int count = 20;
 float a,b,c;
 //declare and initialize arrays
@@ -23,8 +15,9 @@ void setup() {
 
   //initialize variables
   int i = 0;
+  
   while (i < count) {
-    
+   //ARRAY FOR CHARACTERISTICS 
     x[i] = random(width);
     y[i] = random(height);
     velX[i] = random(-5, 5);
