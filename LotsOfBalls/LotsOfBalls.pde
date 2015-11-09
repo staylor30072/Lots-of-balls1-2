@@ -1,4 +1,4 @@
-//regulAR VARIABLES
+//Regular Variables
 int count = 20;
 float a,b,c;
 //declare and initialize arrays
@@ -55,20 +55,20 @@ void draw() {
     }
 
     if (y[i] + diam[i]/2 >= height) {
-      velY[i] = -abs(velY[i]);
+      velY[i] = -abs(velY[i]);      //if the ball hits the floor, it bounces
     } else if (y[i] - diam[i]/2 <= 0) {
-      velY[i] = abs(velY[i]);
+      velY[i] = abs(velY[i]);    //if the ball hits the ceiling, it bounces
     }
     i++;
   }
 }
 void keyPressed(){
-  if(keyCode==UP){
+  if(keyCode==UP){    //if the up arrow is pressed, the color of the balls changed
     a=random(255);
     b=random(255);
     c=random(255);
   }
-  if(keyCode==ESC){
+  if(keyCode==ESC){    //if ESC is pressed, exit program.
     exit();
   }
 }
